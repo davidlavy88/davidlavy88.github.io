@@ -9,24 +9,82 @@ html {
 }
 
 h1.primary {
+    color: white;
     font-weight: bold;
     font-size: 28px;
     text-align: center;    
 }
 
 p.primary {
+    color: white;
     font-size: 15px;
     text-align: center;    
 }
 
+p.secondary {
+    color: white;
+    font-size: 17px;
+    text-align: right; 
+    margin-left: 10px;   
+}
+
+p.third {
+    font-size: 15px;
+    text-align: right; 
+    /*margin-left: 10px;   */
+}
+
+p.fourth {
+    font-size: 15px;
+    text-align: right;
+    color: #818274;
+}
+
+hr.primary {
+    color: #999; 
+    border-color: #999;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+hr.one {
+    color: #999; 
+    border-color: #999;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40px;
+    margin-bottom: 17px;
+}
+
+hr.two {
+    color: #999; 
+    border-color: #999;
+    border-style: solid;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
+
+.evenRow{
+            margin: auto;
+            padding: 0;
+            background-color: #9FFF9D;
+        }
+
 #leftCol {
-    background: #ddd;
+    background: #1F3238;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 75%;
-    overflow: hidden;
+    overflow-y: auto; 
+    /* overflow: hidden; */
     padding: 2em;
 }
 #rightCol {
@@ -38,6 +96,24 @@ p.primary {
     right: 0;
     overflow-y: auto;    
     padding: 2em;
+}
+
+#top,
+#bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50%;
+}
+
+#top {
+    top: 0;
+    background-color: orange;
+}
+
+#bottom {
+    bottom: 0;
+    background-color: green;
 }
 
 
