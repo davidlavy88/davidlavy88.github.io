@@ -1,6 +1,10 @@
 html, body, * {
     padding: 0;
     margin: 0;
+    font-family: Lato;
+    /*font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;*/
+    /*font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;*/
+    /*font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;*/
 }
 html {
     width: 100%;
@@ -15,10 +19,44 @@ h1.primary {
     text-align: center;    
 }
 
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+a.first:link, a.first:visited {
+    color: #888;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a.first:hover, a.first:active {
+    color: white;
+}
+
 p.primary {
     color: white;
     font-size: 15px;
     text-align: center;    
+}
+
+a.second:link, a.second:visited {
+    color: black;
+    text-align: center; 
+    /*text-decoration-line: underline;
+    -webkit-text-decoration-style: dotted;*/
+    -webkit-text-decoration: underline dotted;
+    display: inline-block;
+}
+
+
+a.second:hover, a.second:active {
+    color: #F0243F;
 }
 
 p.secondary {

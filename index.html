@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap Layouts</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>David Lavy's homepage</title>
+
+	<meta name="author" content="David Lavy">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="styles/webmain.css">
 	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="leftCol">
 		<header>
-			<h1 class="primary"> David Lavy</h1>
+			<h1 class="primary">&nbsp;&nbsp;&nbsp;&nbsp;David Lavy</h1>
 			<table>
 				<tr>
 					<td width="200px" padding="0px" valign="top"><center><img src="images/profile.png" height="150px" align="right"></center></td>
 				</tr>
 			</table>
-			<p class="primary">Robotics Engineer @ Aldebaran Robotics</p>
-			<p class="primary">Grad student @ Boston University</p>
+			<p class="primary">Robotics Engineer - Aldebaran Robotics</p>
+			<p class="primary">Grad student - Boston University</p>
 			<p class="primary">david.lavy88@gmail.com</p>
 
 			<hr class="one">
-			<p class="secondary">About me <i class="fa fa-user"></i></p>
+			<p class="secondary"><a href="#aboutme" class="first">About me <i class="fa fa-user"></i></a></p>
 
 			<hr class="primary">
-			<p class="secondary">Projects <i class="fa fa-briefcase"></i></p>
+			<p class="secondary"><a href="#projects" class="first">Projects <i class="fa fa-briefcase"></i></a></p>
 
 			<hr class="primary">
-			<p class="secondary">Courses <i class="fa fa-graduation-cap"></i></p>
+			<p class="secondary"><a href="#courses" class="first">Courses <i class="fa fa-graduation-cap"></i></a></p>
 
 		</header>
 		<hr class="two">
 		<body>
 			<p class="secondary">Find me </p>
-
-			<p class="fourth"> <a href="https://www.linkedin.com/in/davidlavy">LinkedIn <i class="fa fa-linkedin"></i></a></p>
-			<p class="fourth"><a href="https://github.com/davidlavy88">Github <i class="fa fa-github"></i></a></p>
-			<p class="fourth"><a href="https://twitter.com/David_Lavy">Twitter <i class="fa fa-twitter"></i></a></p>
-			<p class="fourth"><a href="https://www.instagram.com/david_lavy/">Instagram <i class="fa fa-instagram"></i></a></p>
-			<p class="fourth"><a href="https://www.youtube.com/channel/UCuMByh57x0hBy7LGqkpAgYA">Youtube <i class="fa fa-youtube"></i></a></p>
+			<p class="fourth"> <a href="https://www.linkedin.com/in/davidlavy" class="first">LinkedIn <i class="fa fa-linkedin"></i></a></p>
+			<p class="fourth"><a href="https://github.com/davidlavy88" class="first">Github <i class="fa fa-github"></i></a></p>
+			<p class="fourth"><a href="https://twitter.com/David_Lavy" class="first">Twitter <i class="fa fa-twitter"></i></a></p>
+			<p class="fourth"><a href="https://www.instagram.com/david_lavy/" class="first">Instagram <i class="fa fa-instagram"></i></a></p>
+			<p class="fourth"><a href="https://www.youtube.com/channel/UCuMByh57x0hBy7LGqkpAgYA" class="first">Youtube <i class="fa fa-youtube"></i></a></p>
 		</body>
 		<hr class="two">
-
 	</div>
+
 	<div id="rightCol">
 		<header>
 		<h2>This website is still in progress. However most of the links are working, it just needs a clean up :)</h2>
 		</header>
-		<h1>About me</h1>
+
+		<br>
+
+		<h1 id="aboutme">About me</h1>
 		<hr>
-		<p>I am finishing my M.Sc. at Boston University in Electrical Engineering and currently working as a Robotics Engineer at Aldebaran Robotics. I also have a Bachelor of Science in Mechatronics Engineering at Universidad Nacional de Ingeneria.</p>
+		<p>I am finishing my M.Sc. at Boston University in Electrical Engineering and currently working as a Robotics Engineer at Aldebaran Robotics. I also have a B.Sc. in Mechatronics Engineering at Universidad Nacional de Ingeneria.</p>
 		<br>
 		<p>My main interest are in the field of Robotics, Computer Vision, Image Processing, Machine Learning, Artificial Intelligence and Computer Graphics.</p>
 		<br>
-		<p>For more information, you can download my <a href="https://github.com/davidlavy88/resume/blob/master/dlavyresume.pdf?raw=true">resume</a></p>
+		<p>For more information, you can download my <a href="https://github.com/davidlavy88/resume/blob/master/dlavyresume.pdf?raw=true" class="second"><b>resume</b></a></p>
 
-		<h1>Projects</h1>
+		<br> 
+
+		<h1 id="projects">Projects</h1>
 		<hr>
 		<p>This is the most recent list of all the latest projects I've been working on. If you have any questions about them, send me an email and I'll try to get back to you as soon as possible.</p>
+
+		<br> 
+
 		<h2>Autonomous Navigation with NAO</h2>
+		<br>
 		<div align="center">
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Lp79IdTRV4Q" frameborder="0" allowfullscreen></iframe>
         </div>
+        <br>
         <p>This project was completed for the EC720 class at Boston University. Here we developed a navigation system for the humanoid robot NAO using data acquired from the 2 cameras mounted on the robot to estimate the position of the ball with respect to the robot. NAO seeks to find a ball, navigate to it, and finally kick it.</p>
-        <p>You can take a look at the final report <a href="http://www.bu.edu/vip/files/pubs/reports/DLTM15-06buece.pdf">here</a></p>
+        <p>You can take a look at the final report <a href="http://www.bu.edu/vip/files/pubs/reports/DLTM15-06buece.pdf" class="second">here</a></p>
 
-        <h1>Courses</h1>
+        <br>
+
+        <h2>Virtual Shape Recognition using Leap Motion</h2>
+        <p>This project was completed for the EC520 class at Boston University. We designed a system to recognize hand drawing gestures of numerical letters in the air using the Leap Motion sensor. By doing a 3D to 2D processing of the input data, this data is then sent to a recognition system using k-Nearest Neighbor method to estimate the numerical value the user is writing.</p>
+        <p>You can take a look at the final report <a href="http://www.bu.edu/vip/files/pubs/reports/DLDP15-03buece.pdf" class="second">here</a></p>
+
+        <br>
+
+        <h2>Facial Identification using Multilayer Perceptron</h2>
+        <p></p>
+        <p>You can take a look at the final presentation <a href="https://docs.google.com/presentation/d/1328Qvm9VlAZadwlNoU3n5m1REY36m_hGcakSYlxW2vM/edit?ts=565d2938#slide=id.p" class="second">here</a></p>
+
+        <br>
+
+        <h2>Design and modelling of a 4DOF Robotic Arm</h2>
+        <p></p>
+        <p>You can take a look at the final report <a href="https://github.com/davidlavy88/resume/blob/master/Paper/paper-mt-517.pdf?raw=true" class="second">here</a></p>
+
+        <br>
+
+        <h1 id="courses">Courses</h1>
         <hr>
-        <p><a href="https://hamidnawab.wordpress.com/ec716-spring-2015/"></a>EC516 Digital Signal Processing</p>
+        <br>
+        <p><a href="https://hamidnawab.wordpress.com/ec716-spring-2015/" class="second"></a>EC516 Digital Signal Processing</p>
         <p>EC505 Stochastic Processes</p>
         <p>EC519 Speech Signal Processing</p>
-        <p><a href="http://sites.bu.edu/jkonrad/courses/#EC520">EC520 Digital Image Processing</a></p>
-        <p><a href="http://sites.bu.edu/jkonrad/courses/#EC720">EC720 Digital Video Processing</a></p>
-        <p><a href="http://www.cs.bu.edu/~betke/cs585/">CS585 Image and Video Computing</a></p>
+        <p><a href="http://sites.bu.edu/jkonrad/courses/#EC520" class="second">EC520 Digital Image Processing</a></p>
+        <p><a href="http://sites.bu.edu/jkonrad/courses/#EC720" class="second">EC720 Digital Video Processing</a></p>
+        <p><a href="http://www.cs.bu.edu/~betke/cs585/" class="second">CS585 Image and Video Computing</a></p>
         <p>EC503 Learning from Data</p>
         <p>EC535 Introduction to Embedded Systems</p>
 	</div>
